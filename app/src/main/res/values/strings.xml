@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="quizapp">クイズアプリ</string>
+    <string name="difficulty">難易度選択</string>
+    <string name="random">無差別問題</string>
+    <string name="normal">ノーマル</string>
+    <string name="hard">ハード</string>
+    <string name="genre">ジャンル選択</string>
+    <string name="title2">難易度選択画面</string>
 </resources>
