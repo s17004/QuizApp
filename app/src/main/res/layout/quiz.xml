@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:background="#fdf2b0"
+            android:id="@+id/quiz"
+            android:textSize="18sp"
+            android:textStyle="bold" tools:text="問題文章表示" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:padding="10dp"
+    />
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/one"
+            app:layout_constraintBottom_toTopOf="@+id/two" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/quiz" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" tools:text="選択肢１"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/two"
+            app:layout_constraintBottom_toTopOf="@+id/three" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/one" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" tools:text="選択肢２"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/three"
+            app:layout_constraintBottom_toTopOf="@+id/four" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/two" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" tools:text="選択肢３"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+            android:id="@+id/four" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/three"
+            tools:text="選択肢４"/>
+</android.support.constraint.ConstraintLayout>

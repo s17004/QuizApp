@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".DifficultyActivity"/>
+        <activity android:name=".NormalActivity"/>
+        <activity android:name=".GenreList"/>
+        <activity android:name=".NoLevel"/>
+        <activity android:name=".HardActivity"/>
     </application>
 
 </manifest>
